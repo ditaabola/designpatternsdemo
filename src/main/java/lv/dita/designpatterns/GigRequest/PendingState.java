@@ -1,6 +1,8 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.GigRequest;
 
-public class PendingState extends State{
+import lv.dita.designpatterns.GigRequest.State;
+
+public class PendingState extends State {
 
     private GigRequest request;
 
@@ -10,12 +12,12 @@ public class PendingState extends State{
 
     @Override
     public void handleRequest(){
-        System.out.println("Turning gig into confirmed");
+        System.out.println("Turning this request into confirmed");
         request.setState(request.getConfirmedState());
     }
 
     @Override
     public String toString() {
-        return "This is a pending gig";
+        return "This is a pending request";
     }
 }

@@ -1,10 +1,13 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.Artist;
+
+import lv.dita.designpatterns.Artist.Artist;
+import lv.dita.designpatterns.Artist.ArtistList;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class GigArtistList implements ArtistList{
+public class GigArtistList implements ArtistList {
        List<Artist> artists;
 
     public GigArtistList() {

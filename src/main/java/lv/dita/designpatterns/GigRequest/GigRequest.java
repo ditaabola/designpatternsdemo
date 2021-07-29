@@ -1,4 +1,4 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.GigRequest;
 
 public class GigRequest {
 

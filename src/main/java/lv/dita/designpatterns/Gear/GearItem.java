@@ -1,6 +1,8 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.Gear;
 
-public class Keyboard implements GearItem{
+import lv.dita.designpatterns.Gear.GearComponent;
+
+public class GearItem implements GearComponent {
 
     private String name;
 
@@ -17,12 +19,12 @@ public class Keyboard implements GearItem{
         this.name = name;
     }
 
-    public Keyboard(String name) {
+    public GearItem(String name) {
         this.name = name;
     }
+
     @Override
     public String toString() {
-        return this.getName();
+        return name;
     }
-
 }

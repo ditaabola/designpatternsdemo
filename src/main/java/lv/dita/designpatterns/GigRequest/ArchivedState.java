@@ -1,6 +1,8 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.GigRequest;
 
-public class ArchivedState extends State{
+import lv.dita.designpatterns.GigRequest.State;
+
+public class ArchivedState extends State {
 
     private GigRequest request;
 
@@ -8,12 +10,12 @@ public class ArchivedState extends State{
         this.request = request;
     }
     public void handleRequest(){
-        System.out.println("Turning this gig into pending");
+        System.out.println("Turning this request into pending");
         request.setState(request.getPendingState());
     }
 
     @Override
     public String toString() {
-        return "This is an archived gig";
+        return "This is an archived request";
     }
 }

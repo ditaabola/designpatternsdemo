@@ -1,6 +1,6 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.Venue;
 
-abstract class Venue {
+public abstract class Venue {
     protected String name = "Venue";
 
     public String getName() {
@@ -8,5 +8,4 @@ abstract class Venue {
     }
 
     public abstract double cost();
-
 }

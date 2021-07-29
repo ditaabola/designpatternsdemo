@@ -1,4 +1,4 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.Artist;
 
 public class Artist {
 

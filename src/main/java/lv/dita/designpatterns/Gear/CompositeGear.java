@@ -1,13 +1,12 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.Gear;
 
-import javax.print.DocFlavor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeGear implements GearItem{
+public class CompositeGear implements GearComponent {
 
         private String name;
-        private List<GearItem> childItems;
+        private List<GearComponent> childItems;
 
         public CompositeGear(String name) {
             this.name = name;
@@ -25,18 +24,18 @@ public class CompositeGear implements GearItem{
 //            }
 
             String gearForABand = this.name;
-            for (GearItem item: childItems) {
+            for (GearComponent item: childItems) {
                 gearForABand += item.printGearItems();
-                gearForABand += " ";
+                gearForABand += " |";
             }
             return gearForABand;
         }
 
-        public void addGear(GearItem gearItem) {
+        public void addGear(GearComponent gearItem) {
             childItems.add(gearItem);
         }
 
-        public void removeGear(GearItem gearItem) {
+        public void removeGear(GearComponent gearItem) {
             childItems.remove(gearItem);
         }
 

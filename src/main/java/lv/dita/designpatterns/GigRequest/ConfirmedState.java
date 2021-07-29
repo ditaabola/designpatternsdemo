@@ -1,6 +1,8 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.GigRequest;
 
-public class ConfirmedState extends State{
+import lv.dita.designpatterns.GigRequest.State;
+
+public class ConfirmedState extends State {
     private GigRequest request;
 
     public ConfirmedState (GigRequest request){
@@ -9,12 +11,12 @@ public class ConfirmedState extends State{
 
     @Override
     public void handleRequest(){
-        System.out.println("Turning this gig into done");
+        System.out.println("Turning this request into done");
         request.setState(request.getArchivedState());
     }
 
     @Override
     public String toString() {
-        return "This is a confirmed gig";
+        return "This is a confirmed request";
     }
 }

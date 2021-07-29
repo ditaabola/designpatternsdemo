@@ -1,4 +1,4 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.Gig;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ public class Gig {
         sb.append(date);
         if (name != null) {
             sb.append(" named ");
-            sb.append(" ");
+            sb.append(name);
             }
         if (type != null) {
             sb.append(" and is of type ");
@@ -88,7 +88,6 @@ public class Gig {
             this.artists = artists;
             return this;
         }
-
 
         public Gig build() {
             return new Gig(this);

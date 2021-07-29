@@ -1,4 +1,6 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.Artist;
+
+import lv.dita.designpatterns.Artist.Artist;
 
 import java.util.Iterator;
 

@@ -1,8 +1,12 @@
-package lv.dita.designpatterns;
+package lv.dita.designpatterns.Artist;
+
+import lv.dita.designpatterns.Artist.Artist;
+import lv.dita.designpatterns.Artist.ArtistList;
+import lv.dita.designpatterns.Artist.ManagedArtistIterator;
 
 import java.util.Iterator;
 
-public class ManagedArtistRoster implements ArtistList{
+public class ManagedArtistRoster implements ArtistList {
 
     static final int MAX_ARTISTS = 5;
     int numberOfArtists = 0;
